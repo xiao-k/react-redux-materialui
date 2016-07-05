@@ -1,0 +1,44 @@
+{
+  "name": "react-redux-sample",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "node ./compiled/server.js",
+    "build": "npm run clean && npm run build:server && npm run build:src",
+    "build:server": "babel ./server --out-dir ./compiled",
+    "build:src": "webpack --config webpack.config.js",
+    "clean": "rm -rf static && rm -rf compiled"
+  },
+  "engines": {
+    "node": "5.x"
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "description": "search screen sample by react + redux + material-ui",
+  "dependencies": {
+    "axios": "^0.12.0",
+    "body-parser": "^1.15.2",
+    "es6-promise": "^3.2.1",
+    "express": "^4.14.0",
+    "material-ui": "^0.15.0",
+    "mongoose": "^4.5.3",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
+    "react-redux": "^4.4.5",
+    "react-router": "^2.5.1",
+    "react-router-redux": "^4.0.5",
+    "react-tap-event-plugin": "^1.0.0",
+    "redux": "^3.5.2",
+    "redux-logger": "^2.6.1",
+    "redux-thunk": "^2.1.0",
+    "webpack-dev-middleware": "^1.6.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.10.1",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-react-hmre": "^1.1.1",
+    "babel-preset-stage-0": "^6.5.0",
+    "webpack": "^1.13.1"
+  }
+}

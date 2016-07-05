@@ -1,0 +1,4 @@
+node_modules/
+compiled/
+static/
+.DS_Store
